@@ -1,7 +1,8 @@
 # angular-base-app
 
 ## Description
-
+Angular Base Application with Firebase authentication and database.
+This project is meant to give beginning developers a head-start in developing their own web application.
 
 Feel free to leave your suggestions, problems, safety concerns or questions in the respected section here on Github.
 
@@ -29,3 +30,5 @@ Now optimized for Angular 13!
 
 
 ## Known issues/concerns
+* firebase security rules are not restrictive enough
+* angularfire's modular API should be used
