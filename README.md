@@ -11,7 +11,7 @@ Feel free to leave your suggestions, problems, safety concerns or questions in t
 * local and Google authentication
 * persistent login
 
-#### Livepreview: [https://beatgubler.github.io/osbapp/](https://beatgubler.github.io/osbapp/)
+#### Livepreview: [https://angular-base-app.gubler-it.com](https://angular-base-app.gubler-it.com)
 Now optimized for Angular 13!
 
 ![oscapp.io [Preview]](https://i.imgur.com/5aglXqM.png)
