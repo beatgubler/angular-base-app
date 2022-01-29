@@ -1,0 +1,11 @@
+<h1>Protected Site</h1>
+<table mat-table [dataSource]="users" class="mat-elevation-z8">
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef> Name </th>
+    <td mat-cell *matCellDef="let user"> {{user.payload.doc.data().username}} </td>
+  </ng-container>
+  <tr mat-header-row *matHeaderRowDef="['name']"></tr>
+  <tr mat-row *matRowDef="let column; columns: ['name'];"></tr>
+</table>
+<br>
+<button mat-raised-button color="primary" (click)="_usersService.createUser()">Create random User</button>
