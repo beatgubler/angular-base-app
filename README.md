@@ -13,7 +13,7 @@ Feel free to leave your suggestions, problems, safety concerns or questions in t
 
 #### Livepreview: [https://angular-base-app.gubler-it.com](https://angular-base-app.gubler-it.com)
 
-![oscapp.io [Preview]](https://i.imgur.com/3fwBien.png)
+![angular-base-app [Preview]](https://i.imgur.com/3fwBien.png)
 
 ## Installation
 * Install NodeJS -> https://nodejs.org/en/download/
