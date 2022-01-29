@@ -21,13 +21,31 @@ Feel free to leave your suggestions, problems, safety concerns or questions in t
 * Clone this project with **git clone https://github.com/beatgubler/osbapp.io.git** or download manually
 **npm install** -> **ng serve**
 
+## Configuration
+### Firebase Console
+* Log into https://console.firebase.google.com/
+* Create New Project
+* Create Firestore Database and change the rules to:
+```
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if
+          true
+    }
+  }
+}
+```
+* Create Authentication method: Email/Password + Google
+* Add App and copy the firebaseConfig
+### Application
+* replace the firebaseConfig with your own config from the Firebase Console
 
 ## Notable external dependencies
 * Firebase - https://www.npmjs.com/package/firebase
 * AngularFire - https://www.npmjs.com/package/@angular/fire
 * Angular Material - https://material.angular.io/
 * Bootstrap - https://getbootstrap.com/
-
 
 ## Known issues/concerns
 * firebase security rules are not restrictive enough
