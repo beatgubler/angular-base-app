@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark" >
+  <a class="navbar-brand" routerLink="/">angular-base-app</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li>
+        <a class="nav-link" *ngIf="email" [routerLinkActive]="['active']" routerLink="/protected">Protected Site</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li>
+        <a class="nav-link noPointer">{{email}}</a>
+      </li>
+      <li *ngIf="!email">
+        <a class="nav-link" routerLink="/auth" [routerLinkActive]="['active']">Login</a>
+      </li>
+      <li *ngIf="email">
+        <a class="nav-link" (click)="_authService.signOut()">Logout</a>
+      </li>
+    </ul>
+  </div>
+</nav>

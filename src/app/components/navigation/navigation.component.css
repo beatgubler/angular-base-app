@@ -1,0 +1,11 @@
+.flexExpand {
+  flex: 1 1 auto;
+}
+
+li { 
+  cursor: pointer; 
+}
+
+a.noPointer {
+  cursor: default;
+}
