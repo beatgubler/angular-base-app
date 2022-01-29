@@ -17,6 +17,7 @@ Feel free to leave your suggestions, problems, safety concerns or questions in t
 
 ## Installation
 * Install NodeJS -> https://nodejs.org/en/download/
+* Install angular/cli -> npm install -g @angular/cli
 * Clone this project with **git clone https://github.com/beatgubler/osbapp.io.git** or download manually
 **npm install** -> **ng serve**
 
